@@ -1,8 +1,9 @@
-<? if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+<?php
+
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 
 \Bitrix\Main\UI\Extension::load(["ui.bootstrap4", "ui.fonts.opensans"]);
 
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("О ресторане");
 ?>
 <header>
