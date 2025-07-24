@@ -1,27 +1,45 @@
 <?php
-
-
 use Bitrix\Main\Page\Asset;
 
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Контакты");
 
 \Bitrix\Main\UI\Extension::load(["ui.bootstrap4", "ui.fonts.opensans"]);
-Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/style.css');
+Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/template_style.css');
 
 ?>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:menu", 
+	".default", 
+	array(
+		"ALLOW_MULTI_SELECT" => "N",
+		"CHILD_MENU_TYPE" => "top",
+		"DELAY" => "N",
+		"MAX_LEVEL" => "1",
+		"MENU_CACHE_GET_VARS" => array(
+		),
+		"MENU_CACHE_TIME" => "3600",
+		"MENU_CACHE_TYPE" => "N",
+		"MENU_CACHE_USE_GROUPS" => "Y",
+		"ROOT_MENU_TYPE" => "top",
+		"USE_EXT" => "N",
+		"COMPONENT_TEMPLATE" => ".default"
+	),
+	false
+);?>
 <div class="bradcam_area bradcam_bg_2">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
                 <div class="bradcam_text text-center">
-                    <h3>Контакты</h3>
+                    <h3><?$APPLICATION->ShowTitle();?></h3>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!--/ bradcam_area  -->
+
 
 <!-- ================ contact section start ================= -->
 <section class="contact-section">
