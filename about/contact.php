@@ -10,7 +10,7 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/template_style.css');
 ?>
 <?$APPLICATION->IncludeComponent(
 	"bitrix:menu", 
-	".default", 
+	"horizontal_multilevel", 
 	array(
 		"ALLOW_MULTI_SELECT" => "N",
 		"CHILD_MENU_TYPE" => "top",
@@ -23,7 +23,7 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/template_style.css');
 		"MENU_CACHE_USE_GROUPS" => "Y",
 		"ROOT_MENU_TYPE" => "top",
 		"USE_EXT" => "N",
-		"COMPONENT_TEMPLATE" => ".default"
+		"COMPONENT_TEMPLATE" => "horizontal_multilevel"
 	),
 	false
 );?>
