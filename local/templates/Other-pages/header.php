@@ -34,7 +34,7 @@ IncludeTemplateLangFile(__FILE__);
                                         Array(
                                             "ROOT_MENU_TYPE" => "top",
                                             "MAX_LEVEL" => "2",
-                                            "CHILD_MENU_TYPE" => "left",
+                                            "CHILD_MENU_TYPE" => "top",
                                             "USE_EXT" => "Y",
                                             "ALLOW_MULTI_SELECT" => "N",
                                             "MENU_CACHE_TYPE" => "A", 
