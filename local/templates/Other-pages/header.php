@@ -30,7 +30,7 @@ IncludeTemplateLangFile(__FILE__);
                                 <div class="main-menu  d-none d-lg-block">
                                     <?$APPLICATION->IncludeComponent(
                                         "bitrix:menu",
-                                        "top",
+                                        "top_horizontal_multilevel_menu",
                                         Array(
                                             "ROOT_MENU_TYPE" => "top",
                                             "MAX_LEVEL" => "2",
