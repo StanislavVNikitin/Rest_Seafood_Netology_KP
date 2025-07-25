@@ -1,7 +1,7 @@
 <?
 $arTemplate = array (
-  'NAME' => 'Шаблон страницы',
-  'DESCRIPTION' => '',
+  'NAME' => 'Ресторан Морская кухня',
+  'DESCRIPTION' => 'Для внутрених страниц',
   'SORT' => '',
   'TYPE' => '',
 );
