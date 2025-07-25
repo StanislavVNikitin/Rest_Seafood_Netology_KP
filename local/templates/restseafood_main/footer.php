@@ -71,12 +71,26 @@ Loc::loadMessages(__FILE__);
                         <h3 class="footer_title">
                             Полезные ссылки
                         </h3>
-                        <ul>
-                            <li><a href="catalog/index.html">Меню</a></li>
-                            <li><a href="about.html">О нас</a></li>
-                            <li><a href="reviews/index.html">Отзывы</a></li>
-                            <li><a href="events/index.html">Мероприятия</a></li>
-                        </ul>
+
+                        <?$APPLICATION->IncludeComponent(
+                            "bitrix:menu",
+                            "menu_footer",
+                            Array(
+                                "ALLOW_MULTI_SELECT" => "N",
+                                "CHILD_MENU_TYPE" => "left",
+                                "COMPONENT_TEMPLATE" => "store_v3_bottom",
+                                "DELAY" => "N",
+                                "MAX_LEVEL" => "1",
+                                "MENU_CACHE_GET_VARS" => "",
+                                "MENU_CACHE_TIME" => "3600",
+                                "MENU_CACHE_TYPE" => "N",
+                                "MENU_CACHE_USE_GROUPS" => "Y",
+                                "MENU_THEME" => "site",
+                                "ROOT_MENU_TYPE" => "bottom",
+                                "USE_EXT" => "N"
+                            )
+                        );?>
+
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 col-lg-4">

@@ -47,9 +47,9 @@ IncludeTemplateLangFile(__FILE__);
                             </h3>
                             <?$APPLICATION->IncludeComponent(
 	"bitrix:menu", 
-	".default", 
+	"catalog_vertical", 
 	array(
-		"ROOT_MENU_TYPE" => "top",
+		"ROOT_MENU_TYPE" => "",
 		"MAX_LEVEL" => "1",
 		"CHILD_MENU_TYPE" => "top",
 		"USE_EXT" => "Y",
@@ -59,8 +59,9 @@ IncludeTemplateLangFile(__FILE__);
 		"MENU_CACHE_USE_GROUPS" => "Y",
 		"MENU_CACHE_GET_VARS" => array(
 		),
-		"COMPONENT_TEMPLATE" => ".default",
-		"DELAY" => "N"
+		"COMPONENT_TEMPLATE" => "catalog_vertical",
+		"DELAY" => "N",
+		"MENU_THEME" => "site"
 	),
 	false
 );?>
