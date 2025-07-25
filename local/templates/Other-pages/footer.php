@@ -16,7 +16,7 @@ IncludeTemplateLangFile(__FILE__);
                         <div class="footer_widget">
                             <div class="footer_logo">
                                 <a href="#">
-                                    <img src="img/footer_logo.png" alt="">
+                                    <img src="<?= SITE_TEMPLATE_PATH ?>/img/footer_logo.png" alt="">
                                 </a>
                             </div>
                             <div class="socail_links">

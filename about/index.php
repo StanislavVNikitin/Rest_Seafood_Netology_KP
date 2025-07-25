@@ -6,7 +6,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 
 $APPLICATION->SetTitle("О ресторане");
 ?>
-<div class="bradcam_area bradcam_bg_В2">
+<div class="bradcam_area bradcam_bg_2">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
@@ -33,12 +33,12 @@ $APPLICATION->SetTitle("О ресторане");
                 <div class="row">
                     <div class="col-xl-6 col-md-6">
                         <div class="about_thumb">
-                            <img src="img/about/about_1.png" alt="">
+                            <img src="<?= SITE_TEMPLATE_PATH ?>/img/about/about_1.png" alt="">
                         </div>
                     </div>
                     <div class="col-xl-6 col-md-6">
                         <div class="about_thumb">
-                            <img src="img/about/about_2.png" alt="">
+                            <img src="<?= SITE_TEMPLATE_PATH ?>/img/about/about_2.png" alt="">
                         </div>
                     </div>
                 </div>
