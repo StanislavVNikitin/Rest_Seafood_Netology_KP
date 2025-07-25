@@ -1,5 +1,10 @@
 <?php
 if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)	die(); 
+
+use Bitrix\Main\Localization\Loc;
+use Bitrix\Main\Page\Asset;
+
+
 IncludeTemplateLangFile(__FILE__);
 ?>
     <!-- footer_start  -->
@@ -96,50 +101,56 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </div>
     </footer>
     <!-- footer_end  -->
-    <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/gijgo.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins.js"></script>
+<!-- JS here -->
+
+<?php
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/vendor/modernizr-3.5.0.min.js');
+
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/vendor/jquery-1.12.4.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/popper.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/bootstrap.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/owl.carousel.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/isotope.pkgd.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/ajax-form.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/waypoints.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/jquery.counterup.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/imagesloaded.pkgd.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/scrollIt.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/jquery.scrollUp.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/wow.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/gijgo.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/nice-select.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/jquery.slicknav.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/jquery.magnific-popup.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/plugins.js');
+
+/*contact js*/
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/contact.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/jquery.ajaxchimp.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/jquery.form.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/jquery.validate.min.js');
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/mail-script.js');
+
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH .'/js/main.js');
+
+?>
 
 
+<script>
+    $('#datepicker').datepicker({
+        iconsLibrary: 'fontawesome',
+        icons: {
+            rightIcon: '<span class="fa fa-calendar-o"></span>'
+        }
+    });
+    $('#datepicker2').datepicker({
+        iconsLibrary: 'fontawesome',
+        icons: {
+            rightIcon: '<span class="fa fa-calendar-o"></span>'
+        }
 
-    <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
+    });
+</script>
+</body>
 
-
-    <script src="js/main.js"></script>
-
-    <script>
-        $('#datepicker').datepicker({
-            iconsLibrary: 'fontawesome',
-            icons: {
-                rightIcon: '<span class="fa fa-calendar-o"></span>'
-            }
-        });
-        $('#datepicker2').datepicker({
-            iconsLibrary: 'fontawesome',
-            icons: {
-                rightIcon: '<span class="fa fa-calendar-o"></span>'
-            }
-
-        });
-    </script>
+</html>

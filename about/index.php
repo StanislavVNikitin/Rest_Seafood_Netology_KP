@@ -19,7 +19,7 @@ $APPLICATION->IncludeComponent(
 		"MENU_CACHE_GET_VARS" => array(
 		),
 		"MAX_LEVEL" => "1",
-		"CHILD_MENU_TYPE" => "",
+		"CHILD_MENU_TYPE" => "top",
 		"USE_EXT" => "N",
 		"DELAY" => "N",
 		"ALLOW_MULTI_SELECT" => "N",
