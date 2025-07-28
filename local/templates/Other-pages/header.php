@@ -29,37 +29,25 @@ IncludeTemplateLangFile(__FILE__);
                             <div class="col-xl-6 col-lg-7">
                             <div class="main-menu  d-none d-lg-block">
 
-                                <?$APPLICATION->IncludeComponent("bitrix:menu", "top_horizontal_multilevel_menu", Array(
-	"ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
-		"CHILD_MENU_TYPE" => "left",	// Тип меню для остальных уровней
-		"DELAY" => "N",	// Откладывать выполнение шаблона меню
-		"MAX_LEVEL" => "4",	// Уровень вложенности меню
-		"MENU_CACHE_GET_VARS" => array(	// Значимые переменные запроса
-			0 => "",
+                                <?$APPLICATION->IncludeComponent(
+	"bitrix:menu", 
+	"top_horizontal_multilevel_menu", 
+	array(
+		"ALLOW_MULTI_SELECT" => "N",
+		"CHILD_MENU_TYPE" => "left",
+		"DELAY" => "N",
+		"MAX_LEVEL" => "4",
+		"MENU_CACHE_GET_VARS" => array(
 		),
-		"MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
-		"MENU_CACHE_TYPE" => "N",	// Тип кеширования
-		"MENU_CACHE_USE_GROUPS" => "Y",	// Учитывать права доступа
-		"ROOT_MENU_TYPE" => "top",	// Тип меню для первого уровня
-		"USE_EXT" => "N",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+		"MENU_CACHE_TIME" => "3600",
+		"MENU_CACHE_TYPE" => "N",
+		"MENU_CACHE_USE_GROUPS" => "Y",
+		"ROOT_MENU_TYPE" => "top",
+		"USE_EXT" => "N",
+		"COMPONENT_TEMPLATE" => "top_horizontal_multilevel_menu"
 	),
 	false
 );?>
-
- <!--                               <nav>
-                                    <ul id="navigation">
-                                        <li><a class="active" href="index.html">Главная</a></li>
-                                        <li><a href="catalog/index.html">Меню</a></li>
-                                        <li><a href="#">О ресторане <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="about.html">О нас</a></li>
-                                                <li><a href="contact.html">Контакты</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="reviews/index.html">Отзывы</a></li>
-                                        <li><a href="events/index.html">Мероприятия</a></li>
-                                    </ul>
-                                </nav>-->
                                 </div>
                         </div>
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
