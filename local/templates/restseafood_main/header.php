@@ -62,7 +62,25 @@ Loc::loadMessages(__FILE__);
                         </div>
                         <div class="col-xl-6 col-lg-7">
                             <div class="main-menu  d-none d-lg-block">
-                                <nav>
+
+                                <?$APPLICATION->IncludeComponent("bitrix:menu", "top_horizontal_multilevel_menu", Array(
+	"ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
+		"CHILD_MENU_TYPE" => "left",	// Тип меню для остальных уровней
+		"DELAY" => "N",	// Откладывать выполнение шаблона меню
+		"MAX_LEVEL" => "4",	// Уровень вложенности меню
+		"MENU_CACHE_GET_VARS" => array(	// Значимые переменные запроса
+			0 => "",
+		),
+		"MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+		"MENU_CACHE_TYPE" => "N",	// Тип кеширования
+		"MENU_CACHE_USE_GROUPS" => "Y",	// Учитывать права доступа
+		"ROOT_MENU_TYPE" => "top",	// Тип меню для первого уровня
+		"USE_EXT" => "N",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+	),
+	false
+);?>
+
+ <!--                               <nav>
                                     <ul id="navigation">
                                         <li><a class="active" href="index.html">Главная</a></li>
                                         <li><a href="catalog/index.html">Меню</a></li>
@@ -75,7 +93,8 @@ Loc::loadMessages(__FILE__);
                                         <li><a href="reviews/index.html">Отзывы</a></li>
                                         <li><a href="events/index.html">Мероприятия</a></li>
                                     </ul>
-                                </nav></div>
+                                </nav>-->
+                                </div>
                         </div>
                         <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                             <div class="say_hello">

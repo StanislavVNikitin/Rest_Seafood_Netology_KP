@@ -45,6 +45,7 @@ IncludeTemplateLangFile(__FILE__);
                             <h3 class="footer_title">
                                 Полезные ссылки
                             </h3>
+
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6 col-lg-4">
