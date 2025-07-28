@@ -6,29 +6,6 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 
 $APPLICATION->SetTitle("О ресторане");
 ?>
-<header>
-<?
-$APPLICATION->IncludeComponent(
-	"bitrix:menu", 
-	"horizontal_multilevel", 
-	array(
-		"ROOT_MENU_TYPE" => "top",
-		"MENU_CACHE_TYPE" => "A",
-		"MENU_CACHE_TIME" => "3600",
-		"MENU_CACHE_USE_GROUPS" => "Y",
-		"MENU_CACHE_GET_VARS" => array(
-		),
-		"MAX_LEVEL" => "1",
-		"CHILD_MENU_TYPE" => "top",
-		"USE_EXT" => "N",
-		"DELAY" => "N",
-		"ALLOW_MULTI_SELECT" => "N",
-		"COMPONENT_TEMPLATE" => "horizontal_multilevel"
-	),
-	false
-);
-?>
-</header>
 <div class="bradcam_area bradcam_bg_2">
     <div class="container">
         <div class="row">
@@ -56,12 +33,12 @@ $APPLICATION->IncludeComponent(
                 <div class="row">
                     <div class="col-xl-6 col-md-6">
                         <div class="about_thumb">
-                            <img src="img/about/about_1.png" alt="">
+                            <img src="<?= SITE_TEMPLATE_PATH ?>/img/about/about_1.png" alt="">
                         </div>
                     </div>
                     <div class="col-xl-6 col-md-6">
                         <div class="about_thumb">
-                            <img src="img/about/about_2.png" alt="">
+                            <img src="<?= SITE_TEMPLATE_PATH ?>/img/about/about_2.png" alt="">
                         </div>
                     </div>
                 </div>

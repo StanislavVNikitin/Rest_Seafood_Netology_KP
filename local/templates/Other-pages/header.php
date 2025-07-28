@@ -22,27 +22,13 @@ IncludeTemplateLangFile(__FILE__);
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="img/logo.png" alt="">
+                                        <img src="<?= SITE_TEMPLATE_PATH ?>/img/logo.png" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-7">
                                 <div class="main-menu  d-none d-lg-block">
-                                    <?$APPLICATION->IncludeComponent(
-                                        "bitrix:menu",
-                                        "top_horizontal_multilevel_menu",
-                                        Array(
-                                            "ROOT_MENU_TYPE" => "top",
-                                            "MAX_LEVEL" => "2",
-                                            "CHILD_MENU_TYPE" => "top",
-                                            "USE_EXT" => "Y",
-                                            "ALLOW_MULTI_SELECT" => "N",
-                                            "MENU_CACHE_TYPE" => "A", 
-                                            "MENU_CACHE_TIME" => "3600",
-                                            "MENU_CACHE_USE_GROUPS" => "Y",
-                                            "MENU_CACHE_GET_VARS" => array()
-                                        )
-                                    );?>
+
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">

@@ -16,7 +16,7 @@ IncludeTemplateLangFile(__FILE__);
                         <div class="footer_widget">
                             <div class="footer_logo">
                                 <a href="#">
-                                    <img src="img/footer_logo.png" alt="">
+                                    <img src="<?= SITE_TEMPLATE_PATH ?>/img/footer_logo.png" alt="">
                                 </a>
                             </div>
                             <div class="socail_links">
@@ -45,26 +45,7 @@ IncludeTemplateLangFile(__FILE__);
                             <h3 class="footer_title">
                                 Полезные ссылки
                             </h3>
-                            <?$APPLICATION->IncludeComponent(
-	"bitrix:menu", 
-	"catalog_vertical", 
-	array(
-		"ROOT_MENU_TYPE" => "",
-		"MAX_LEVEL" => "1",
-		"CHILD_MENU_TYPE" => "top",
-		"USE_EXT" => "Y",
-		"ALLOW_MULTI_SELECT" => "N",
-		"MENU_CACHE_TYPE" => "A",
-		"MENU_CACHE_TIME" => "3600",
-		"MENU_CACHE_USE_GROUPS" => "Y",
-		"MENU_CACHE_GET_VARS" => array(
-		),
-		"COMPONENT_TEMPLATE" => "catalog_vertical",
-		"DELAY" => "N",
-		"MENU_THEME" => "site"
-	),
-	false
-);?>
+
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6 col-lg-4">
