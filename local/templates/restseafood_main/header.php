@@ -53,11 +53,16 @@ Loc::loadMessages(__FILE__);
                 <div class="header_bottom_border">
                     <div class="row align-items-center no-gutters">
                         <div class="col-xl-3 col-lg-2">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="/local/templates/.default/assets/img/logo.png" alt="">
-                                </a>
-                            </div>
+                            <?$APPLICATION->IncludeComponent(
+                                "bitrix:main.include",
+                                "",
+                                Array(
+                                    "AREA_FILE_SHOW" => "file",
+                                    "AREA_FILE_SUFFIX" => "inc",
+                                    "EDIT_TEMPLATE" => "",
+                                    "PATH" => "/include/logo.php"
+                                )
+                            );?>
                         </div>
                         <div class="col-xl-6 col-lg-7">
                             <div class="main-menu  d-none d-lg-block">
@@ -79,26 +84,19 @@ Loc::loadMessages(__FILE__);
 	false
 );?>
 
- <!--                               <nav>
-                                    <ul id="navigation">
-                                        <li><a class="active" href="index.html">Главная</a></li>
-                                        <li><a href="catalog/index.html">Меню</a></li>
-                                        <li><a href="#">О ресторане <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="about.html">О нас</a></li>
-                                                <li><a href="contact.html">Контакты</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="reviews/index.html">Отзывы</a></li>
-                                        <li><a href="events/index.html">Мероприятия</a></li>
-                                    </ul>
-                                </nav>-->
                                 </div>
                         </div>
                         <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                            <div class="say_hello">
-                                <a href="#">Наши мероприятия</a>
-                            </div>
+                            <?$APPLICATION->IncludeComponent(
+                                "bitrix:main.include",
+                                "",
+                                Array(
+                                    "AREA_FILE_SHOW" => "file",
+                                    "AREA_FILE_SUFFIX" => "inc",
+                                    "EDIT_TEMPLATE" => "",
+                                    "PATH" => "/include/header_event_link.php"
+                                )
+                            );?>
                         </div>
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
@@ -111,5 +109,3 @@ Loc::loadMessages(__FILE__);
     </div>
 </header>
 <!-- header-end -->
-
-

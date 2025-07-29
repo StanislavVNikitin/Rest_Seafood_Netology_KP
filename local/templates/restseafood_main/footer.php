@@ -20,49 +20,40 @@ Loc::loadMessages(__FILE__);
             <div class="row">
                 <div class="col-xl-3 col-md-6 col-lg-3 ">
                     <div class="footer_widget">
-                        <div class="footer_logo">
-                            <a href="#">
-                                <img src="/local/templates/.default/assets/img/footer_logo.png" alt="">
-                            </a>
-                        </div>
-                        <p>5th flora, 700/D kings road, green <br> lane New York-1782 <br>
-                            <a href="#">+10 367 826 2567</a> <br>
-                            <a href="#">contact@carpenter.com</a>
-                        </p>
-                        <p>
+                        <?$APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "inc",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "/include/footer/logo.php"
+                            )
+                        );?>
+
+                        <?$APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "inc",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "/include/footer/address.php"
+                            )
+                        );?>
 
 
+                        <?$APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "inc",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "/include/footer/socail_links.php"
+                            )
+                        );?>
 
-                        </p>
-                        <div class="socail_links">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <i class="ti-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="ti-twitter-alt"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-pinterest"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-youtube-play"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
 
                     </div>
                 </div>
@@ -94,16 +85,13 @@ Loc::loadMessages(__FILE__);
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="footer_widget">
-                        <h3 class="footer_title">
-                            Поиск
-                        </h3>
-                        <form action="/search/" class="newsletter_form">
-                            <input type="text" placeholder="Поиск по сайту">
-                            <button type="submit">Найти</button>
-                        </form>
-                        <p class="newsletter_text">Найдется всё, что нужно.</p>
-                    </div>
+
+                    <?$APPLICATION->IncludeComponent("bitrix:search.form", "footer_search_form", Array(
+	"PAGE" => "#SITE_DIR#search/index.php",	// Страница выдачи результатов поиска (доступен макрос #SITE_DIR#)
+		"USE_SUGGEST" => "N",	// Показывать подсказку с поисковыми фразами
+	),
+	false
+);?>
                 </div>
             </div>
         </div>
@@ -113,11 +101,16 @@ Loc::loadMessages(__FILE__);
             <div class="footer_border"></div>
             <div class="row">
                 <div class="col-xl-12">
-                    <p class="copy_right text-center">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </p>
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:main.include",
+                    "",
+                    Array(
+                        "AREA_FILE_SHOW" => "file",
+                        "AREA_FILE_SUFFIX" => "inc",
+                        "EDIT_TEMPLATE" => "",
+                        "PATH" => "/include/footer/copyright.php"
+                    )
+                );?>
                 </div>
             </div>
         </div>

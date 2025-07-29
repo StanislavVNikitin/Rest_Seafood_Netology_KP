@@ -4,48 +4,17 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Ресторан Морская кухня");
 ?>
 
-    <!-- slider_area_start -->
-    <div class="slider_area">
-        <div class="slider_active owl-carousel">
-            <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
-                <div class="container">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-xl-9 col-md-9 col-md-12">
-                            <div class="slider_text text-center">
-                                <h3>Ресторан "Морская кухня"</h3>
-                                <a href="catalog/index.html" class="boxed-btn3">Наше меню</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single_slider  d-flex align-items-center slider_bg_2 overlay">
-                <div class="container">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-xl-9 col-md-9 col-md-12">
-                            <div class="slider_text text-center">
-                                <h3>Ресторан "Морская кухня"</h3>
-                                <a href="catalog/index.html" class="boxed-btn3">Наше меню</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
-                <div class="container">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-xl-9 col-md-9 col-md-12">
-                            <div class="slider_text text-center">
-                                <h3>Ресторан "Морская кухня"</h3>
-                                <a href="catalog/index.html" class="boxed-btn3">Наше меню</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- slider_area_end -->
+<?$APPLICATION->IncludeComponent(
+    "bitrix:main.include",
+    "",
+    Array(
+        "AREA_FILE_SHOW" => "file",
+        "AREA_FILE_SUFFIX" => "inc",
+        "EDIT_TEMPLATE" => "",
+        "PATH" => "/include/header_slider.php"
+    )
+);?>
+
     <!-- gallery_start -->
     <div class="gallery_area">
         <div class="container">
