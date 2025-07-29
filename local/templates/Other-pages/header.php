@@ -1,14 +1,42 @@
 <?php
-if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)	die(); 
-IncludeTemplateLangFile(__FILE__);
+
+if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true){
+    die();
+}
+
+use Bitrix\Main\Localization\Loc;
+use Bitrix\Main\Page\Asset;
+
+Loc::loadMessages(__FILE__);
+
 ?>
-<!DOCTYPE html>
-<html lang="<?= LANGUAGE_ID ?>">
+
+<!doctype html lang="<?= LANGUAGE_ID ?>">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?$APPLICATION->ShowTitle();?></title>
-    <?$APPLICATION->ShowHead();?>
+
+    <?php Asset::getInstance()->addString('<meta http-equiv="x-ua-compatible" content="ie=edge">');?>
+    <title><?php $APPLICATION->ShowTitle(); ?></title>
+    <?php $APPLICATION->ShowHead();
+        Asset::getInstance()->addString('<link rel="shortcut icon" type="image/x-icon" href="/local/templates/.default/assets/img/favicon.png">');
+        Asset::getInstance()->addString('<meta name="viewport" content="width=device-width, initial-scale=1">');
+        Asset::getInstance()->addString('<link rel="preconnect" href="https://fonts.googleapis.com">');
+        Asset::getInstance()->addString('<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>');
+        Asset::getInstance()->addString('<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">');
+
+        Asset::getInstance()->addCss('/local/templates/.default/assets/css/bootstrap.min.css');
+        Asset::getInstance()->addCss('/local/templates/.default/assets/css/owl.carousel.min.css');
+
+        Asset::getInstance()->addCss('/local/templates/.default/assets/css/magnific-popup.css');
+        Asset::getInstance()->addCss('/local/templates/.default/assets/css/font-awesome.min.css');
+        Asset::getInstance()->addCss('/local/templates/.default/assets/css/themify-icons.css');
+        Asset::getInstance()->addCss('/local/templates/.default/assets/css/gijgo.css');
+        Asset::getInstance()->addCss('/local/templates/.default/assets/css/nice-select.css');
+        Asset::getInstance()->addCss('/local/templates/.default/assets/css/flaticon.css');
+        Asset::getInstance()->addCss('/local/templates/.default/assets/css/slicknav.css');
+    ?>
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 <body>
     <?$APPLICATION->ShowPanel();?>
