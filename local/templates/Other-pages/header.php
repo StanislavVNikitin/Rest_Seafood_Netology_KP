@@ -21,7 +21,7 @@ IncludeTemplateLangFile(__FILE__);
                         <div class="row align-items-center no-gutters">
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html">
+                                    <a href="/">
                                         <img src="<?= SITE_TEMPLATE_PATH ?>/img/logo.png" alt="">
                                     </a>
                                 </div>
