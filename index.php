@@ -4,17 +4,6 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Ресторан Морская кухня");
 ?>
 
-<?$APPLICATION->IncludeComponent(
-    "bitrix:main.include",
-    "",
-    Array(
-        "AREA_FILE_SHOW" => "file",
-        "AREA_FILE_SUFFIX" => "inc",
-        "EDIT_TEMPLATE" => "",
-        "PATH" => "/include/header_slider.php"
-    )
-);?>
-
     <!-- gallery_start -->
     <div class="gallery_area">
         <div class="container">

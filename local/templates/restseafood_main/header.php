@@ -35,6 +35,9 @@ Loc::loadMessages(__FILE__);
         Asset::getInstance()->addCss('/local/templates/.default/assets/css/nice-select.css');
         Asset::getInstance()->addCss('/local/templates/.default/assets/css/flaticon.css');
         Asset::getInstance()->addCss('/local/templates/.default/assets/css/slicknav.css');
+
+        Asset::getInstance()->addCss('/local/templates/.default/assets/css/style.css');
+
     ?>
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
@@ -109,3 +112,15 @@ Loc::loadMessages(__FILE__);
     </div>
 </header>
 <!-- header-end -->
+
+
+<?$APPLICATION->IncludeComponent(
+    "bitrix:main.include",
+    "",
+    Array(
+        "AREA_FILE_SHOW" => "file",
+        "AREA_FILE_SUFFIX" => "inc",
+        "EDIT_TEMPLATE" => "",
+        "PATH" => "/include/header_slider.php"
+    )
+);?>
