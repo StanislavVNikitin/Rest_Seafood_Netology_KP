@@ -43,7 +43,7 @@ IncludeTemplateLangFile(__FILE__);
 		"MENU_CACHE_TYPE" => "N",
 		"MENU_CACHE_USE_GROUPS" => "Y",
 		"ROOT_MENU_TYPE" => "top",
-		"USE_EXT" => "N",
+		"USE_EXT" => "Y",
 		"COMPONENT_TEMPLATE" => "top_horizontal_multilevel_menu"
 	),
 	false
