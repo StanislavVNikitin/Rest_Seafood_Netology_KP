@@ -35,7 +35,6 @@ Loc::loadMessages(__FILE__);
         Asset::getInstance()->addCss(SITE_TEMPLATE_PATH .'/css/nice-select.css');
         Asset::getInstance()->addCss(SITE_TEMPLATE_PATH .'/css/flaticon.css');
         Asset::getInstance()->addCss(SITE_TEMPLATE_PATH .'/css/slicknav.css');
-        Asset::getInstance()->addCss(SITE_TEMPLATE_PATH .'/css/style.css');
     ?>
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
