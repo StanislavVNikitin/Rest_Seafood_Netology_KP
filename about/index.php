@@ -23,9 +23,8 @@ $APPLICATION->SetTitle("О ресторане");
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
-                <h3>Exercitation photo booth stumptown tote
-                    bag todo Banksy elit small</h3>
-                    <p>Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. Exercitation photo booth stumptown tote bag todo Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation photo booth et 8-bit kale chips proident chillwave deep vow laborum. Aliquip veniam delectus, marfa eiusmod pinterest.</p>
+                <h3>О нашем ресторане</h3>
+                    <p>Мы стремимся создать для вас незабываемые впечатления от каждого посещения. Наша команда профессионалов готовит изысканные блюда из свежайших морепродуктов и рыбы. Уютная атмосфера, внимательное обслуживание и высокое качество кухни - всё это делает наш ресторан идеальным местом для особенных моментов. Мы гордимся тем, что уже много лет радуем наших гостей великолепными блюдами и безупречным сервисом.</p>
             </div>
         </div>
         <div class="row justify-content-center">

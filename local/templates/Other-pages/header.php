@@ -21,16 +21,35 @@ IncludeTemplateLangFile(__FILE__);
                         <div class="row align-items-center no-gutters">
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html">
+                                    <a href="/">
                                         <img src="<?= SITE_TEMPLATE_PATH ?>/img/logo.png" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-7">
-                                <div class="main-menu  d-none d-lg-block">
+                            <div class="main-menu  d-none d-lg-block">
 
+                                <?$APPLICATION->IncludeComponent(
+	"bitrix:menu", 
+	"top_horizontal_multilevel_menu", 
+	array(
+		"ALLOW_MULTI_SELECT" => "N",
+		"CHILD_MENU_TYPE" => "left",
+		"DELAY" => "N",
+		"MAX_LEVEL" => "4",
+		"MENU_CACHE_GET_VARS" => array(
+		),
+		"MENU_CACHE_TIME" => "3600",
+		"MENU_CACHE_TYPE" => "N",
+		"MENU_CACHE_USE_GROUPS" => "Y",
+		"ROOT_MENU_TYPE" => "top",
+		"USE_EXT" => "Y",
+		"COMPONENT_TEMPLATE" => "top_horizontal_multilevel_menu"
+	),
+	false
+);?>
                                 </div>
-                            </div>
+                        </div>
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="say_hello">
                                     <a href="events/index.html">Наши мероприятия</a>
