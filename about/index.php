@@ -11,7 +11,7 @@ $APPLICATION->SetTitle("О ресторане");
         <div class="row">
             <div class="col-xl-12">
                 <div class="bradcam_text text-center">
-                    <h3>О нас</h3>
+                    <h3><?$APPLICATION->ShowTitle();?></h3>
                 </div>
             </div>
         </div>
