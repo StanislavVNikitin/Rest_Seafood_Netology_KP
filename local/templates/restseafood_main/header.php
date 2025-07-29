@@ -19,22 +19,22 @@ Loc::loadMessages(__FILE__);
     <?php Asset::getInstance()->addString('<meta http-equiv="x-ua-compatible" content="ie=edge">');?>
     <title><?php $APPLICATION->ShowTitle(); ?></title>
     <?php $APPLICATION->ShowHead();
-        Asset::getInstance()->addString('<link rel="shortcut icon" type="image/x-icon" href="'.SITE_TEMPLATE_PATH.'/img/favicon.png">');
+        Asset::getInstance()->addString('<link rel="shortcut icon" type="image/x-icon" href="/local/templates/.default/assets/img/favicon.png">');
         Asset::getInstance()->addString('<meta name="viewport" content="width=device-width, initial-scale=1">');
         Asset::getInstance()->addString('<link rel="preconnect" href="https://fonts.googleapis.com">');
         Asset::getInstance()->addString('<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>');
         Asset::getInstance()->addString('<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">');
 
-        Asset::getInstance()->addCss(SITE_TEMPLATE_PATH .'/css/bootstrap.min.css');
-        Asset::getInstance()->addCss(SITE_TEMPLATE_PATH .'/css/owl.carousel.min.css');
+        Asset::getInstance()->addCss('/local/templates/.default/assets/css/bootstrap.min.css');
+        Asset::getInstance()->addCss('/local/templates/.default/assets/css/owl.carousel.min.css');
 
-        Asset::getInstance()->addCss(SITE_TEMPLATE_PATH .'/css/magnific-popup.css');
-        Asset::getInstance()->addCss(SITE_TEMPLATE_PATH .'/css/font-awesome.min.css');
-        Asset::getInstance()->addCss(SITE_TEMPLATE_PATH .'/css/themify-icons.css');
-        Asset::getInstance()->addCss(SITE_TEMPLATE_PATH .'/css/gijgo.css');
-        Asset::getInstance()->addCss(SITE_TEMPLATE_PATH .'/css/nice-select.css');
-        Asset::getInstance()->addCss(SITE_TEMPLATE_PATH .'/css/flaticon.css');
-        Asset::getInstance()->addCss(SITE_TEMPLATE_PATH .'/css/slicknav.css');
+        Asset::getInstance()->addCss('/local/templates/.default/assets/css/magnific-popup.css');
+        Asset::getInstance()->addCss('/local/templates/.default/assets/css/font-awesome.min.css');
+        Asset::getInstance()->addCss('/local/templates/.default/assets/css/themify-icons.css');
+        Asset::getInstance()->addCss('/local/templates/.default/assets/css/gijgo.css');
+        Asset::getInstance()->addCss('/local/templates/.default/assets/css/nice-select.css');
+        Asset::getInstance()->addCss('/local/templates/.default/assets/css/flaticon.css');
+        Asset::getInstance()->addCss('/local/templates/.default/assets/css/slicknav.css');
     ?>
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
@@ -55,7 +55,7 @@ Loc::loadMessages(__FILE__);
                         <div class="col-xl-3 col-lg-2">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="<?= SITE_TEMPLATE_PATH ?>/img/logo.png" alt="">
+                                    <img src="/local/templates/.default/assets/img/logo.png" alt="">
                                 </a>
                             </div>
                         </div>

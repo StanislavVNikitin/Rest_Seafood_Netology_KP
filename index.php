@@ -58,29 +58,29 @@ $APPLICATION->SetTitle("Ресторан Морская кухня");
             </div>
         </div>
         <div class="single_gallery big_img">
-            <a class="popup-image" href="<?= SITE_TEMPLATE_PATH ?>/img/gallery/1.png"></a>
-            <img src="<?= SITE_TEMPLATE_PATH ?>/img/gallery/1.png" alt="">
+            <a class="popup-image" href="/local/templates/.default/assets/img/gallery/1.png"></a>
+            <img src="/local/templates/.default/assets/img/gallery/1.png" alt="">
         </div>
         <div class="single_gallery small_img">
-            <a class="popup-image" href="<?= SITE_TEMPLATE_PATH ?>/img/gallery/2.png"></a>
-            <img src="<?= SITE_TEMPLATE_PATH ?>/img/gallery/2.png" alt="">
+            <a class="popup-image" href="/local/templates/.default/assets/img/gallery/2.png"></a>
+            <img src="/local/templates/.default/assets/img/gallery/2.png" alt="">
         </div>
         <div class="single_gallery small_img">
-            <a class="popup-image" href="<?= SITE_TEMPLATE_PATH ?>/img/gallery/3.png"></a>
-            <img src="<?= SITE_TEMPLATE_PATH ?>/img/gallery/3.png" alt="">
+            <a class="popup-image" href="/local/templates/.default/assets/img/gallery/3.png"></a>
+            <img src="/local/templates/.default/assets/img/gallery/3.png" alt="">
         </div>
 
         <div class="single_gallery small_img">
-            <a class="popup-image" href="<?= SITE_TEMPLATE_PATH ?>/img/gallery/4.png"></a>
-            <img src="<?= SITE_TEMPLATE_PATH ?>/img/gallery/4.png" alt="">
+            <a class="popup-image" href="/local/templates/.default/assets/img/gallery/4.png"></a>
+            <img src="/local/templates/.default/assets/img/gallery/4.png" alt="">
         </div>
         <div class="single_gallery small_img">
-            <a class="popup-image" href="<?= SITE_TEMPLATE_PATH ?>/img/gallery/5.png"></a>
-            <img src="<?= SITE_TEMPLATE_PATH ?>/img/gallery/5.png" alt="">
+            <a class="popup-image" href="/local/templates/.default/assets/img/gallery/5.png"></a>
+            <img src="/local/templates/.default/assets/img/gallery/5.png" alt="">
         </div>
         <div class="single_gallery big_img">
-            <a class="popup-image" href="<?= SITE_TEMPLATE_PATH ?>/img/gallery/6.png"></a>
-            <img src="<?= SITE_TEMPLATE_PATH ?>/img/gallery/6.png" alt="">
+            <a class="popup-image" href="/local/templates/.default/assets/img/gallery/6.png"></a>
+            <img src="/local/templates/.default/assets/img/gallery/6.png" alt="">
         </div>
     </div>
 
@@ -159,7 +159,7 @@ $APPLICATION->SetTitle("Ресторан Морская кухня");
                                 </div>
                                 <div class="testmonial_author">
                                     <div class="thumb">
-                                        <img src="<?= SITE_TEMPLATE_PATH ?>/img/testimonial/author.png" alt="">
+                                        <img src="/local/templates/.default/assets/img/testimonial/author.png" alt="">
                                     </div>
                                     <div class="name">
                                         <h3>Robert Thomson</h3>
@@ -183,7 +183,7 @@ $APPLICATION->SetTitle("Ресторан Морская кухня");
                                 </div>
                                 <div class="testmonial_author">
                                     <div class="thumb">
-                                        <img src="<?= SITE_TEMPLATE_PATH ?>/img/testimonial/author2.png" alt="">
+                                        <img src="/local/templates/.default/assets/img/testimonial/author2.png" alt="">
                                     </div>
                                     <div class="name">
                                         <h3>Kristiana Chouhan</h3>
@@ -207,7 +207,7 @@ $APPLICATION->SetTitle("Ресторан Морская кухня");
                                 </div>
                                 <div class="testmonial_author">
                                     <div class="thumb">
-                                        <img src="<?= SITE_TEMPLATE_PATH ?>/img/testimonial/author2.png" alt="">
+                                        <img src="/local/templates/.default/assets/img/testimonial/author2.png" alt="">
                                     </div>
                                     <div class="name">
                                         <h3>Kristiana Chouhan</h3>
@@ -231,7 +231,7 @@ $APPLICATION->SetTitle("Ресторан Морская кухня");
                                 </div>
                                 <div class="testmonial_author">
                                     <div class="thumb">
-                                        <img src="<?= SITE_TEMPLATE_PATH ?>/img/testimonial/author.png" alt="">
+                                        <img src="/local/templates/.default/assets/img/testimonial/author.png" alt="">
                                     </div>
                                     <div class="name">
                                         <h3>Robert Thomson</h3>
@@ -255,7 +255,7 @@ $APPLICATION->SetTitle("Ресторан Морская кухня");
                                 </div>
                                 <div class="testmonial_author">
                                     <div class="thumb">
-                                        <img src="<?= SITE_TEMPLATE_PATH ?>/img/testimonial/author2.png" alt="">
+                                        <img src="/local/templates/.default/assets/img/testimonial/author2.png" alt="">
                                     </div>
                                     <div class="name">
                                         <h3>Kristiana Chouhan</h3>

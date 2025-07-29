@@ -1343,12 +1343,12 @@ h3 {
 
 /* line 1, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/_slider.scss */
 .slider_bg_1 {
-    background-image: url(./img/banner/banner.png);
+    background-image: url(/local/templates/.default/assets/img/banner/banner.png);
 }
 
 /* line 4, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/_slider.scss */
 .slider_bg_2 {
-    background-image: url(./img/banner/banner2.png);
+    background-image: url(/local/templates/.default/assets/img/banner/banner2.png);
 }
 
 /* line 7, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/_slider.scss */
@@ -1750,7 +1750,7 @@ h3 {
 
 /* line 279, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/_slider.scss */
 .property_bg {
-    background-image: url(./img/banner/property.png);
+    background-image: url(/local/templates/.default/assets/img/banner/property.png);
 }
 
 /* line 1, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/_about.scss */
@@ -1999,7 +1999,7 @@ h3 {
 
 /* line 2, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/_testmonial.scss */
 .testimonial_area {
-    background-image: url(./img/testimonial/bg.png);
+    background-image: url(/local/templates/.default/assets/img/testimonial/bg.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -2095,7 +2095,7 @@ h3 {
 .testimonial_area .single_testmonial .author_opinion:after {
     position: absolute;
     content: '';
-    background-image: url(./img/svg_icon/quote.svg);
+    background-image: url(/local/templates/.default/assets/img/svg_icon/quote.svg);
     top: -15px;
     width: 39px;
     height: 29px;
@@ -2184,7 +2184,7 @@ h3 {
 
 /* line 141, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/_testmonial.scss */
 .Information_area {
-    background-image: url(./img/banner/info_banner.png);
+    background-image: url(/local/templates/.default/assets/img/banner/info_banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -2812,22 +2812,22 @@ h3 {
 
 /* line 1, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/_bradcam.scss */
 .bradcam_bg_1 {
-    background-image: url(./img/banner/bradcam.png);
+    background-image: url(/local/templates/.default/assets/img/banner/bradcam.png);
 }
 
 /* line 4, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/_bradcam.scss */
 .bradcam_bg_2 {
-    background-image: url(./img/banner/bradcam2.png);
+    background-image: url(/local/templates/.default/assets/img/banner/bradcam2.png);
 }
 
 /* line 7, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/_bradcam.scss */
 .bradcam_bg_3 {
-    background-image: url(./img/banner/bradcam3.png);
+    background-image: url(/local/templates/.default/assets/img/banner/bradcam3.png);
 }
 
 /* line 10, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/_bradcam.scss */
 .bradcam_bg_4 {
-    background-image: url(./img/banner/details.png);
+    background-image: url(/local/templates/.default/assets/img/banner/details.png);
 }
 
 /* line 13, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/_bradcam.scss */
@@ -4644,7 +4644,7 @@ h6 {
 
 /* line 798, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/_elements.scss */
 .primary-checkbox input:checked + label {
-    background: url(./img/elements/primary-check.png) no-repeat center center/cover;
+    background: url(/local/templates/.default/assets/img/elements/primary-check.png) no-repeat center center/cover;
     border: none;
 }
 
@@ -4686,7 +4686,7 @@ h6 {
 
 /* line 835, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/_elements.scss */
 .confirm-checkbox input:checked + label {
-    background: url(./img/elements/success-check.png) no-repeat center center/cover;
+    background: url(/local/templates/.default/assets/img/elements/success-check.png) no-repeat center center/cover;
     border: none;
 }
 
@@ -4734,7 +4734,7 @@ h6 {
 
 /* line 876, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/_elements.scss */
 .disabled-checkbox input:checked + label {
-    background: url(./img/elements/disabled-check.png) no-repeat center center/cover;
+    background: url(/local/templates/.default/assets/img/elements/disabled-check.png) no-repeat center center/cover;
     border: none;
 }
 
@@ -4776,7 +4776,7 @@ h6 {
 
 /* line 913, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/_elements.scss */
 .primary-radio input:checked + label {
-    background: url(./img/elements/primary-radio.png) no-repeat center center/cover;
+    background: url(/local/templates/.default/assets/img/elements/primary-radio.png) no-repeat center center/cover;
     border: none;
 }
 
@@ -4818,7 +4818,7 @@ h6 {
 
 /* line 950, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/_elements.scss */
 .confirm-radio input:checked + label {
-    background: url(./img/elements/success-radio.png) no-repeat center center/cover;
+    background: url(/local/templates/.default/assets/img/elements/success-radio.png) no-repeat center center/cover;
     border: none;
 }
 
@@ -4866,7 +4866,7 @@ h6 {
 
 /* line 991, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/_elements.scss */
 .disabled-radio input:checked + label {
-    background: url(./img/elements/disabled-radio.png) no-repeat center center/cover;
+    background: url(/local/templates/.default/assets/img/elements/disabled-radio.png) no-repeat center center/cover;
     border: none;
 }
 
