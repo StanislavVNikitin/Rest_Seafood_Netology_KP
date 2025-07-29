@@ -20,23 +20,40 @@ Loc::loadMessages(__FILE__);
             <div class="row">
                 <div class="col-xl-3 col-md-6 col-lg-3 ">
                     <div class="footer_widget">
-                        <div class="footer_logo">
-                            <a href="">
-                                <img src="<?= SITE_TEMPLATE_PATH ?>/img/footer_logo.png" alt="">
-                            </a>
-                        </div>
-                        <p>5th flora, 700/D kings road, green <br> lane New York-1782 <br>
-                            <a href="#">+10 367 826 2567</a> <br>
-                            <a href="#">contact@carpenter.com</a>
-                        </p>
                         <?$APPLICATION->IncludeComponent(
                             "bitrix:main.include",
                             "",
                             Array(
                                 "AREA_FILE_SHOW" => "file",
-                                "PATH" => SITE_TEMPLATE_PATH."/include/social_links.php"
+                                "AREA_FILE_SUFFIX" => "inc",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "/include/footer/logo.php"
                             )
                         );?>
+
+                        <?$APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "inc",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "/include/footer/address.php"
+                            )
+                        );?>
+
+
+                        <?$APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "inc",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "/include/footer/socail_links.php"
+                            )
+                        );?>
+
 
                     </div>
                 </div>
@@ -68,26 +85,13 @@ Loc::loadMessages(__FILE__);
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="footer_widget">
-                        <h3 class="footer_title">
-                            Поиск
-                        </h3>
-                        <div class="newsletter_form">
-                            <?$APPLICATION->IncludeComponent(
-                                "bitrix:search.form",
-                                "flat",
-                                Array(
-                                    "PAGE" => "/search/",
-                                    "USE_SUGGEST" => "N"
-                                ),
-                                false,
-                                array(
-                                    "HIDE_ICONS" => "Y"
-                                )
-                            );?>
-                        </div>
-                        <p class="newsletter_text">Найдется всё, что нужно.</p>
-                    </div>
+
+                    <?$APPLICATION->IncludeComponent("bitrix:search.form", "footer_search_form", Array(
+	"PAGE" => "#SITE_DIR#search/index.php",	// Страница выдачи результатов поиска (доступен макрос #SITE_DIR#)
+		"USE_SUGGEST" => "N",	// Показывать подсказку с поисковыми фразами
+	),
+	false
+);?>
                 </div>
             </div>
         </div>
@@ -97,16 +101,16 @@ Loc::loadMessages(__FILE__);
             <div class="footer_border"></div>
             <div class="row">
                 <div class="col-xl-12">
-                    <p class="copy_right text-center">
-                        <?$APPLICATION->IncludeComponent(
-                            "bitrix:main.include",
-                            "",
-                            Array(
-                                "AREA_FILE_SHOW" => "file",
-                                "PATH" => SITE_TEMPLATE_PATH."/include/copyright.php"
-                            )
-                        );?>
-                    </p>
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:main.include",
+                    "",
+                    Array(
+                        "AREA_FILE_SHOW" => "file",
+                        "AREA_FILE_SUFFIX" => "inc",
+                        "EDIT_TEMPLATE" => "",
+                        "PATH" => "/include/footer/copyright.php"
+                    )
+                );?>
                 </div>
             </div>
         </div>
