@@ -16,7 +16,7 @@ foreach($arResult as $arItem):?>
 
 		<?if ($arItem["DEPTH_LEVEL"] == 1):?>
 			<li><a href="<?=$arItem["LINK"]?>" class="<?if ($arItem["SELECTED"]):?>active<?endif?>"><?=$arItem["TEXT"]?></a>
-				<ul>
+				<ul class="submenu">
 		<?else:?>
 			<li<?if ($arItem["SELECTED"]):?> class="active"<?endif?>><a href="<?=$arItem["LINK"]?>"><?=$arItem["TEXT"]?></a>
 				<ul class="submenu">
