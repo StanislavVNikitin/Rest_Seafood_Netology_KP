@@ -333,13 +333,14 @@ h3 {
 /* line 247, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/theme-default.scss */
 .owl-carousel .owl-nav div.owl-next i {
   position: relative;
+  top: 50px;
   right: 0;
 }
 
 /* line 254, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/theme-default.scss */
 .owl-carousel .owl-nav div.owl-prev i {
   position: relative;
-  top: 0px;
+  top: 50px;
 }
 
 /* line 264, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/theme-default.scss */
