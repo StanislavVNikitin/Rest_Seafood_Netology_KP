@@ -32,12 +32,12 @@ $APPLICATION->SetTitle("О ресторане");
                 <div class="row">
                     <div class="col-xl-6 col-md-6">
                         <div class="about_thumb">
-                            <img src="<?= SITE_TEMPLATE_PATH ?>/img/about/about_1.png" alt="">
+                            <img src="/local/templates/.default/assets/img/about/about_1.png" alt="">
                         </div>
                     </div>
                     <div class="col-xl-6 col-md-6">
                         <div class="about_thumb">
-                            <img src="<?= SITE_TEMPLATE_PATH ?>/img/about/about_2.png" alt="">
+                            <img src="/local/templates/.default/assets/img/about/about_2.png" alt="">
                         </div>
                     </div>
                 </div>
