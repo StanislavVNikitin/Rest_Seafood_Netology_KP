@@ -1,0 +1,170 @@
+/* Стили для меню ресторана */
+.Delicious_area {
+	padding: 100px 0;
+	background: #ffffff;
+}
+
+.section_title {
+	margin-bottom: 50px;
+}
+
+.section_title h3 {
+	font-size: 36px;
+	font-weight: 700;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.tablist_menu ul {
+	border: none;
+	margin-bottom: 50px;
+}
+
+.tablist_menu ul li {
+	margin: 0 10px;
+}
+
+.tablist_menu ul li a {
+	border: none;
+	background: transparent;
+	padding: 20px;
+	border-radius: 10px;
+	transition: all 0.3s ease;
+}
+
+.tablist_menu ul li a.active,
+.tablist_menu ul li a:hover {
+	background: #f8f9fa;
+	color: #333;
+}
+
+.single_menu {
+	text-align: center;
+}
+
+.single_menu .icon {
+	margin-bottom: 15px;
+}
+
+.single_menu .icon i {
+	font-size: 48px;
+	color: #ff6b6b;
+}
+
+.single_menu h4 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #333;
+	margin: 0;
+}
+
+.single_delicious {
+	margin-bottom: 30px;
+	padding: 20px;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+}
+
+.single_delicious:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.single_delicious .thumb {
+	flex: 0 0 120px;
+	margin-right: 20px;
+}
+
+.single_delicious .thumb img {
+	width: 120px;
+	height: 120px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.single_delicious .info {
+	flex: 1;
+}
+
+.single_delicious .info h3 {
+	font-size: 20px;
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.single_delicious .info h3 a {
+	color: #333;
+	text-decoration: none;
+}
+
+.single_delicious .info h3 a:hover {
+	color: #ff6b6b;
+}
+
+.single_delicious .info p {
+	color: #666;
+	margin-bottom: 15px;
+	line-height: 1.6;
+}
+
+.single_delicious .info span {
+	display: block;
+	font-size: 18px;
+	font-weight: 700;
+	color: #ff6b6b;
+	margin-bottom: 15px;
+}
+
+.genric-btn {
+	display: inline-block;
+	padding: 8px 20px;
+	border: 2px solid #ff6b6b;
+	color: #ff6b6b;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+	font-weight: 500;
+}
+
+.genric-btn:hover {
+	background: #ff6b6b;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+	.Delicious_area {
+		padding: 50px 0;
+	}
+
+	.section_title h3 {
+		font-size: 28px;
+	}
+
+	.single_delicious {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.single_delicious .thumb {
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+
+	.single_delicious .thumb img {
+		width: 80px;
+		height: 80px;
+	}
+
+	.tablist_menu ul li {
+		margin: 5px;
+	}
+
+	.tablist_menu ul li a {
+		padding: 15px;
+	}
+}
