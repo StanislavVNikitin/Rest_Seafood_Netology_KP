@@ -12,84 +12,102 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
-<div class="news-detail">
-	<?if($arParams["DISPLAY_PICTURE"]!="N" && is_array($arResult["DETAIL_PICTURE"])):?>
-		<img
-			class="detail_picture"
-			border="0"
-			src="<?=$arResult["DETAIL_PICTURE"]["SRC"]?>"
-			width="<?=$arResult["DETAIL_PICTURE"]["WIDTH"]?>"
-			height="<?=$arResult["DETAIL_PICTURE"]["HEIGHT"]?>"
-			alt="<?=$arResult["DETAIL_PICTURE"]["ALT"]?>"
-			title="<?=$arResult["DETAIL_PICTURE"]["TITLE"]?>"
-			/>
-	<?endif?>
-	<?if($arParams["DISPLAY_DATE"]!="N" && $arResult["DISPLAY_ACTIVE_FROM"]):?>
-		<span class="news-date-time"><?=$arResult["DISPLAY_ACTIVE_FROM"]?></span>
-	<?endif;?>
-	<?if($arParams["DISPLAY_NAME"]!="N" && $arResult["NAME"]):?>
-		<h3><?=$arResult["NAME"]?></h3>
-	<?endif;?>
-	<?if($arParams["DISPLAY_PREVIEW_TEXT"]!="N" && ($arResult["FIELDS"]["PREVIEW_TEXT"] ?? '')):?>
-		<p><?=$arResult["FIELDS"]["PREVIEW_TEXT"];unset($arResult["FIELDS"]["PREVIEW_TEXT"]);?></p>
-	<?endif;?>
-	<?if($arResult["NAV_RESULT"]):?>
-		<?if($arParams["DISPLAY_TOP_PAGER"]):?><?=$arResult["NAV_STRING"]?><br /><?endif;?>
-		<?echo $arResult["NAV_TEXT"];?>
-		<?if($arParams["DISPLAY_BOTTOM_PAGER"]):?><br /><?=$arResult["NAV_STRING"]?><?endif;?>
-	<?elseif($arResult["DETAIL_TEXT"] <> ''):?>
-		<?echo $arResult["DETAIL_TEXT"];?>
-	<?else:?>
-		<?echo $arResult["PREVIEW_TEXT"];?>
-	<?endif?>
-	<div style="clear:both"></div>
-	<br />
-	<?foreach($arResult["FIELDS"] as $code=>$value):
-		if ('PREVIEW_PICTURE' == $code || 'DETAIL_PICTURE' == $code)
-		{
-			?><?=GetMessage("IBLOCK_FIELD_".$code)?>:&nbsp;<?
-			if (!empty($value) && is_array($value))
-			{
-				?><img border="0" src="<?=$value["SRC"]?>" width="<?=$value["WIDTH"]?>" height="<?=$value["HEIGHT"]?>"><?
-			}
-		}
-		else
-		{
-			?><?=GetMessage("IBLOCK_FIELD_".$code)?>:&nbsp;<?=$value;?><?
-		}
-		?><br />
-	<?endforeach;
-	foreach($arResult["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
 
-		<?=$arProperty["NAME"]?>:&nbsp;
-		<?if(is_array($arProperty["DISPLAY_VALUE"])):?>
-			<?=implode("&nbsp;/&nbsp;", $arProperty["DISPLAY_VALUE"]);?>
-		<?else:?>
-			<?=$arProperty["DISPLAY_VALUE"];?>
-		<?endif?>
-		<br />
-	<?endforeach;
-	if(array_key_exists("USE_SHARE", $arParams) && $arParams["USE_SHARE"] == "Y")
-	{
-		?>
-		<div class="news-detail-share">
-			<noindex>
-			<?
-			$APPLICATION->IncludeComponent("bitrix:main.share", "", array(
-					"HANDLERS" => $arParams["SHARE_HANDLERS"],
-					"PAGE_URL" => $arResult["~DETAIL_PAGE_URL"],
-					"PAGE_TITLE" => $arResult["~NAME"],
-					"SHORTEN_URL_LOGIN" => $arParams["SHARE_SHORTEN_URL_LOGIN"],
-					"SHORTEN_URL_KEY" => $arParams["SHARE_SHORTEN_URL_KEY"],
-					"HIDE" => $arParams["SHARE_HIDE"],
-				),
-				$component,
-				array("HIDE_ICONS" => "Y")
-			);
-			?>
-			</noindex>
-		</div>
-		<?
-	}
-	?>
+<!-- bradcam_area  -->
+<div class="bradcam_area bradcam_bg_2">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="bradcam_text text-center">
+                    <h3><?=$arResult["NAME"];?></h3>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<!--/ bradcam_area  -->
+<!-- Start Align Area -->
+<div class="about_area">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about_info_wrap">
+                    <h3><?=$arResult["NAME"];?></h3>
+                    <span class="long_dash"></span>
+                    <p><?=$arResult["DETAIL_TEXT"];?></p>
+                    <ul class="food_list">
+                        <?php if (isset($arResult['PROPERTIES']["DATA_EVENT"]["VALUE"])): ?>
+                        <li>
+                            <img src="/local/templates/.default/assets/img/svg_icon/salad.svg" alt="">
+                            <span><?=$arResult['PROPERTIES']["DATA_EVENT"]["VALUE"];?></span>
+                        </li>
+                        <?php endif; ?>
+                        <?php if (isset($arResult['PROPERTIES']["OPTION_TEXT"]["VALUE"])): ?>
+                        <li>
+                            <img src="/local/templates/.default/assets/img/svg_icon/tray.svg" alt="">
+                            <span><?=$arResult['PROPERTIES']["OPTION_TEXT"]["VALUE"];?></span>
+                        </li>
+                        <?php endif; ?>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about_img">
+                    <?php if (isset($arResult["PREVIEW_PICTURE"]["SRC"])): ?>
+                    <div class="img_1">
+                        <img src="<?=$arResult["PREVIEW_PICTURE"]["SRC"];?>" alt="">
+                    </div>
+                    <?php endif; ?>
+                    <?php if (isset($arResult["DETAIL_PICTURE"]["SRC"])): ?>
+                    <div class="small_img">
+                        <img src="<?=$arResult["DETAIL_PICTURE"]["SRC"];?>" alt="">
+                    </div>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5">
+        <a href="/events/">Все мероприятия</a></p>
+    </div>
+</div>
+
+<!-- gallery_start -->
+<!--<div class="gallery_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title text-center mb-75">
+                    <h3>Фото с прошлых мероприятий</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="single_gallery big_img">
+        <a class="popup-image" href="../img/gallery/1.png"></a>
+        <img src="../img/gallery/1.png" alt="">
+    </div>
+    <div class="single_gallery small_img">
+        <a class="popup-image" href="../img/gallery/2.png"></a>
+        <img src="../img/gallery/2.png" alt="">
+    </div>
+    <div class="single_gallery small_img">
+        <a class="popup-image" href="../img/gallery/3.png"></a>
+        <img src="../img/gallery/3.png" alt="">
+    </div>
+
+    <div class="single_gallery small_img">
+        <a class="popup-image" href="../img/gallery/4.png"></a>
+        <img src="../img/gallery/4.png" alt="">
+    </div>
+    <div class="single_gallery small_img">
+        <a class="popup-image" href="../img/gallery/5.png"></a>
+        <img src="../img/gallery/5.png" alt="">
+    </div>
+    <div class="single_gallery big_img">
+        <a class="popup-image" href="../img/gallery/6.png"></a>
+        <img src="../img/gallery/6.png" alt="">
+    </div>
+</div>-->
+
+
