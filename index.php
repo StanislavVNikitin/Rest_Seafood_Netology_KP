@@ -4,47 +4,112 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Ресторан Морская кухня");
 ?>
 
-    <!-- gallery_start -->
-    <div class="gallery_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="section_title text-center mb-75">
-                        <h3>Самое вкусное</h3>
-                    </div>
+<!-- Меню -->
+        <?$APPLICATION->IncludeComponent(
+	"bitrix:news", 
+	"catalog", 
+	array(
+		"ADD_ELEMENT_CHAIN" => "N",
+		"ADD_SECTIONS_CHAIN" => "Y",
+		"AJAX_MODE" => "Y",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"AJAX_OPTION_HISTORY" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"CACHE_FILTER" => "N",
+		"CACHE_GROUPS" => "Y",
+		"CACHE_TIME" => "3600",
+		"CACHE_TYPE" => "A",
+		"CHECK_DATES" => "Y",
+		"DETAIL_ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"DETAIL_DISPLAY_BOTTOM_PAGER" => "N",
+		"DETAIL_DISPLAY_TOP_PAGER" => "N",
+		"DISPLAY_BOTTOM_PAGER" => "N",
+		"DISPLAY_DATE" => "N",
+		"DISPLAY_NAME" => "Y",
+		"DISPLAY_PICTURE" => "Y",
+		"DISPLAY_PREVIEW_TEXT" => "N",
+		"DISPLAY_TOP_PAGER" => "N",
+		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+		"IBLOCK_ID" => "2",
+		"IBLOCK_TYPE" => "catalog",
+		"NEWS_COUNT" => "12",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_TEMPLATE" => ".default",
+		"SEF_MODE" => "Y",
+		"SET_STATUS_404" => "Y",
+		"SET_TITLE" => "N",
+		"SHOW_404" => "N",
+		"USE_FILTER" => "N",
+		"USE_SEARCH" => "N",
+		"SEF_FOLDER" => "/catalog/",
+		"COMPONENT_TEMPLATE" => "catalog",
+		"USE_RSS" => "N",
+		"USE_RATING" => "N",
+		"USE_CATEGORIES" => "N",
+		"USE_REVIEW" => "N",
+		"SORT_BY1" => "ACTIVE_FROM",
+		"SORT_ORDER1" => "DESC",
+		"SORT_BY2" => "SORT",
+		"SORT_ORDER2" => "ASC",
+		"TEMPLATE_THEME" => "blue",
+		"SET_LAST_MODIFIED" => "N",
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+		"USE_PERMISSIONS" => "N",
+		"STRICT_SECTION_CHECK" => "N",
+		"USE_SHARE" => "N",
+		"MEDIA_PROPERTY" => "",
+		"SLIDER_PROPERTY" => "",
+		"PREVIEW_TRUNCATE_LEN" => "",
+		"LIST_ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"LIST_FIELD_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"LIST_PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"META_KEYWORDS" => "-",
+		"META_DESCRIPTION" => "-",
+		"BROWSER_TITLE" => "-",
+		"DETAIL_SET_CANONICAL_URL" => "N",
+		"DETAIL_FIELD_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"DETAIL_PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"DETAIL_PAGER_TITLE" => "Страница",
+		"DETAIL_PAGER_TEMPLATE" => "",
+		"DETAIL_PAGER_SHOW_ALL" => "N",
+		"PAGER_TITLE" => "Новости",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL" => "N",
+		"PAGER_BASE_LINK_ENABLE" => "N",
+		"MESSAGE_404" => "",
+		"LIST_USE_SHARE" => "",
+		"SEF_URL_TEMPLATES" => array(
+			"news" => "",
+			"section" => "",
+			"detail" => "#SECTION_CODE#/#ELEMENT_CODE#/",
+		)
+	),
+	false
+);?>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title text-center">
+                    <a href="/catalog/" class="boxed-btn3">Смотреть все меню</a>
                 </div>
             </div>
         </div>
-        <div class="single_gallery big_img">
-            <a class="popup-image" href="/local/templates/.default/assets/img/gallery/1.png"></a>
-            <img src="/local/templates/.default/assets/img/gallery/1.png" alt="">
-        </div>
-        <div class="single_gallery small_img">
-            <a class="popup-image" href="/local/templates/.default/assets/img/gallery/2.png"></a>
-            <img src="/local/templates/.default/assets/img/gallery/2.png" alt="">
-        </div>
-        <div class="single_gallery small_img">
-            <a class="popup-image" href="/local/templates/.default/assets/img/gallery/3.png"></a>
-            <img src="/local/templates/.default/assets/img/gallery/3.png" alt="">
-        </div>
-
-        <div class="single_gallery small_img">
-            <a class="popup-image" href="/local/templates/.default/assets/img/gallery/4.png"></a>
-            <img src="/local/templates/.default/assets/img/gallery/4.png" alt="">
-        </div>
-        <div class="single_gallery small_img">
-            <a class="popup-image" href="/local/templates/.default/assets/img/gallery/5.png"></a>
-            <img src="/local/templates/.default/assets/img/gallery/5.png" alt="">
-        </div>
-        <div class="single_gallery big_img">
-            <a class="popup-image" href="/local/templates/.default/assets/img/gallery/6.png"></a>
-            <img src="/local/templates/.default/assets/img/gallery/6.png" alt="">
-        </div>
     </div>
-
-    <!-- gallery end -->
-
-    <!-- Мероприятия -->
+</div>
+<!-- Мероприятия -->
     <div class="event_area">
         <div class="container">
             <div class="row">
