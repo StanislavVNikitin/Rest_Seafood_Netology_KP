@@ -54,14 +54,14 @@ $this->setFrameMode(true);
             <div class="col-lg-6">
                 <div class="about_img">
                     <?php if (isset($arResult["PREVIEW_PICTURE"]["SRC"])): ?>
-                    <div class="img_1">
-                        <img src="<?=$arResult["PREVIEW_PICTURE"]["SRC"];?>" alt="">
-                    </div>
+                        <div class="img_1">
+                            <img src="<?=$arResult["PREVIEW_PICTURE"]["SRC"];?>" alt="">
+                        </div>
                     <?php endif; ?>
                     <?php if (isset($arResult["DETAIL_PICTURE"]["SRC"])): ?>
-                    <div class="small_img">
-                        <img src="<?=$arResult["DETAIL_PICTURE"]["SRC"];?>" alt="">
-                    </div>
+                        <div class="small_img">
+                            <img src="<?=$arResult["DETAIL_PICTURE"]["SRC"];?>" alt="">
+                        </div>
                     <?php endif; ?>
                 </div>
             </div>
