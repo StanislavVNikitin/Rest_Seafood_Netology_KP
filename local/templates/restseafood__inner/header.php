@@ -18,7 +18,7 @@ Loc::loadMessages(__FILE__);
 
     <?php Asset::getInstance()->addString('<meta http-equiv="x-ua-compatible" content="ie=edge">');?>
     <title><?php $APPLICATION->ShowTitle(); ?></title>
-    <?php $APPLICATION->ShowHead();
+    <?php
         Asset::getInstance()->addString('<link rel="shortcut icon" type="image/x-icon" href="/local/templates/.default/assets/img/favicon.png">');
         Asset::getInstance()->addString('<meta name="viewport" content="width=device-width, initial-scale=1">');
         Asset::getInstance()->addString('<link rel="preconnect" href="https://fonts.googleapis.com">');
@@ -68,7 +68,7 @@ Loc::loadMessages(__FILE__);
 
         Asset::getInstance()->addJs('/local/templates/.default/assets/js/main.js');
 
-
+        $APPLICATION->ShowHead();
     ?>
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
