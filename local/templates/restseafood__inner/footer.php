@@ -120,38 +120,6 @@ Loc::loadMessages(__FILE__);
 
 <!-- JS here -->
 
-<?php
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/vendor/modernizr-3.5.0.min.js');
-
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/vendor/jquery-1.12.4.min.js');
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/popper.min.js');
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/bootstrap.min.js');
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/owl.carousel.min.js');
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/isotope.pkgd.min.js');
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/ajax-form.js');
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/waypoints.min.js');
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/jquery.counterup.min.js');
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/imagesloaded.pkgd.min.js');
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/scrollIt.js');
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/jquery.scrollUp.min.js');
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/wow.min.js');
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/gijgo.min.js');
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/nice-select.min.js');
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/jquery.slicknav.min.js');
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/jquery.magnific-popup.min.js');
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/plugins.js');
-
-/*contact js*/
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/contact.js');
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/jquery.ajaxchimp.min.js');
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/jquery.form.js');
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/jquery.validate.min.js');
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/mail-script.js');
-
-Asset::getInstance()->addJs('/local/templates/.default/assets/js/main.js');
-
-?>
-
 
 <script>
     $('#datepicker').datepicker({
